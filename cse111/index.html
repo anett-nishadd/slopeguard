@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="SLOPEGUARD is a student-built landslide monitoring concept exploring how rainfall, soil-water conditions, and slope movement indicators can inform trained authorities."
+    />
+    <meta name="theme-color" content="#101b18" />
+    <title>SLOPEGUARD — Read the slope</title>
+    <link rel="preconnect" href="https://videos.pexels.com" />
+    <link rel="preconnect" href="https://images.pexels.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="SLOPEGUARD home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" fill="none">
+            <path d="M4 27.5 14.8 9l5.1 8.3 3.2-5.1L32 27.5H4Z" />
+            <path d="m9.2 27.5 5.6-9.6 5.3 9.6m-2.1-3.8 5-7.7 6.7 11.5" />
+            <path d="M18 5.5v5m-2.5-2.5h5" />
+          </svg>
+        </span>
+        <span class="brand-name">SLOPE<span>GUARD</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#approach">Approach</a>
+        <a href="#prototype">Prototype</a>
+        <a href="#testing">Testing</a>
+        <a href="#pathway">Real-world pathway</a>
+      </nav>
+      <a class="header-link" href="#safety">
+        Safety first <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <video
+          class="hero-video"
+          id="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="https://images.pexels.com/videos/34698830/4k-drone-above-clouds-clouds-forest-34698830.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          aria-hidden="true"
+        >
+          <source
+            src="https://videos.pexels.com/video-files/34698830/14707301_640_360_60fps.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A landslide monitoring concept</p>
+          <h1 id="hero-title">Read the slope.<br /><span>Respect the warning.</span></h1>
+          <p class="hero-copy">
+            Exploring how rainfall, soil-water conditions, and ground movement
+            can help trained teams notice changing conditions sooner.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#approach">
+              Explore the concept <span aria-hidden="true">↓</span>
+            </a>
+            <a class="button button-quiet" href="#prototype">
+              See the prototype <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-caption">
+          <span class="caption-line"></span>
+          <span>Illustrative Kerala forest footage · not disaster footage</span>
+        </div>
+        <button class="video-toggle" id="video-toggle" type="button" aria-pressed="false">
+          <span class="video-toggle-icon" aria-hidden="true">Ⅱ</span>
+          <span class="video-toggle-label">Pause background video</span>
+        </button>
+        <a class="scroll-cue" href="#approach" aria-label="Scroll to the concept">
+          <span>Scroll to explore</span><span class="scroll-arrow" aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      <section class="intro section-wrap" id="approach">
+        <div class="section-label"><span>01</span> THE IDEA</div>
+        <div class="intro-grid">
+          <div>
+            <p class="eyebrow eyebrow-dark">A concept shaped by real-world need</p>
+            <h2>Small signals.<br /><em>Thoughtful response.</em></h2>
+          </div>
+          <div class="intro-copy">
+            <p>
+              Inspired by the 30 July 2024 Chooralmala–Mundakkai disaster in
+              Wayanad, Kerala, SLOPEGUARD is a proposed monitoring-and-alert
+              concept for slope-risk areas.
+            </p>
+            <p>
+              It combines measured ground conditions with rainfall information
+              to help trained authorities identify concerning changes early.
+              It does not claim to predict every landslide.
+            </p>
+            <div class="concept-note">
+              <span class="note-icon" aria-hidden="true">i</span>
+              <span>This is a student prototype concept—not a certified or operational warning system.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="system-section">
+        <div class="section-wrap">
+          <div class="section-heading">
+            <div class="section-label section-label-light"><span>02</span> HOW IT CONNECTS</div>
+            <h2>From the hillside<br /><em>to informed action.</em></h2>
+            <p>Three parts work together—alongside expert assessment and approved response plans.</p>
+          </div>
+          <div class="system-grid">
+            <article class="system-card">
+              <div class="card-index">01 <span>MONITOR</span></div>
+              <div class="system-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M7 36 22 10l8 13 5-8 9 21H7Z" />
+                  <path d="m14 36 8-14 8 14M34 10v8m-4-4h8" />
+                </svg>
+              </div>
+              <h3>Field monitoring</h3>
+              <p>Observe rainfall, soil-water response, and slope movement with instruments selected for the site.</p>
+              <div class="card-tags"><span>Rainfall</span><span>Soil-water</span><span>Movement</span></div>
+            </article>
+            <div class="system-connector" aria-hidden="true">→</div>
+            <article class="system-card">
+              <div class="card-index">02 <span>UNDERSTAND</span></div>
+              <div class="system-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M8 37V11m0 26h33" />
+                  <path d="m13 31 8-8 7 4 11-13" />
+                  <circle cx="21" cy="23" r="2" /><circle cx="28" cy="27" r="2" />
+                </svg>
+              </div>
+              <h3>Data &amp; analysis</h3>
+              <p>Time-stamp readings, check sensor health, and review trends against expert-defined site thresholds.</p>
+              <div class="card-tags"><span>Trends</span><span>Sensor health</span><span>Site-specific</span></div>
+            </article>
+            <div class="system-connector" aria-hidden="true">→</div>
+            <article class="system-card">
+              <div class="card-index">03 <span>RESPOND</span></div>
+              <div class="system-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M24 7 43 40H5L24 7Z" />
+                  <path d="M24 19v9m0 5h.02" />
+                </svg>
+              </div>
+              <h3>Alert &amp; response</h3>
+              <p>Flag unusual patterns or faults for a staffed team and authorised officials to verify.</p>
+              <div class="card-tags"><span>Human review</span><span>Approved plans</span></div>
+            </article>
+          </div>
+          <p class="system-footnote">
+            <span aria-hidden="true">↗</span> Alerts must follow authorised disaster-management procedures.
+          </p>
+        </div>
+      </section>
+
+      <section class="workflow section-wrap">
+        <div class="section-label"><span>03</span> THE WORKFLOW</div>
+        <div class="workflow-layout">
+          <div class="workflow-heading">
+            <p class="eyebrow eyebrow-dark">A careful sequence</p>
+            <h2>Measure.<br /><em>Review. Respond.</em></h2>
+            <p>Reliable monitoring starts well before an alert is ever considered.</p>
+          </div>
+          <ol class="steps-list">
+            <li><span>01</span><div><h3>Assess the slope</h3><p>Geologists and geotechnical engineers evaluate the site and choose suitable sensor locations.</p></div></li>
+            <li><span>02</span><div><h3>Install &amp; establish a baseline</h3><p>Calibrate professional instruments and learn what normal conditions look like over time.</p></div></li>
+            <li><span>03</span><div><h3>Record &amp; compare</h3><p>Track rainfall, ground-water response, and measurable movement against validated site thresholds.</p></div></li>
+            <li><span>04</span><div><h3>Verify &amp; communicate</h3><p>A staffed team checks unusual patterns; authorised officials decide on public warnings or evacuation instructions.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="prototype-section" id="prototype">
+        <div class="section-wrap">
+          <div class="prototype-heading">
+            <div>
+              <div class="section-label"><span>04</span> STUDENT PROTOTYPE</div>
+              <h2>Build to learn.<br /><em>Not to predict.</em></h2>
+            </div>
+            <p>
+              A tabletop demonstration can show how sensor inputs and test
+              alerts work together. Keep all readings and alerts clearly
+              labelled as simulations.
+            </p>
+          </div>
+          <div class="parts-grid">
+            <article class="part-card">
+              <span class="part-number">01 / CONTROL</span>
+              <h3>ESP32 board</h3>
+              <p>Reads sensors, runs demonstration logic, and can send test data over Wi-Fi.</p>
+              <span class="part-example">Controller</span>
+            </article>
+            <article class="part-card">
+              <span class="part-number">02 / RAINFALL</span>
+              <h3>Rain input</h3>
+              <p>A demo rain sensor can show wetness; a tipping-bucket gauge is more meaningful for rainfall measurement.</p>
+              <span class="part-example">Rain sensor / gauge</span>
+            </article>
+            <article class="part-card">
+              <span class="part-number">03 / SOIL-WATER</span>
+              <h3>Moisture input</h3>
+              <p>A capacitive sensor can show changes in model soil moisture—not pore-water pressure.</p>
+              <span class="part-example">Capacitive sensor</span>
+            </article>
+            <article class="part-card">
+              <span class="part-number">04 / MOVEMENT</span>
+              <h3>Tilt input</h3>
+              <p>An IMU can demonstrate orientation changes; tilt alone does not prove a landslide is impending.</p>
+              <span class="part-example">MPU6050 / IMU</span>
+            </article>
+            <article class="part-card">
+              <span class="part-number">05 / LOCAL ALERT</span>
+              <h3>LEDs &amp; buzzer</h3>
+              <p>Show test states such as NORMAL, CHECK, ALERT, and SENSOR FAULT on the tabletop model.</p>
+              <span class="part-example">LED / buzzer / OLED</span>
+            </article>
+            <article class="part-card">
+              <span class="part-number">06 / SAFE BUILD</span>
+              <h3>Power &amp; enclosure</h3>
+              <p>Use a regulated supply, protected wiring, and keep electronics dry during controlled tests.</p>
+              <span class="part-example">Breadboard / enclosure</span>
+            </article>
+          </div>
+          <div class="build-tip">
+            <span class="build-tip-icon" aria-hidden="true">!</span>
+            <p><strong>Electrical note</strong> Check each datasheet and ESP32 voltage limit. Never connect a 5 V signal directly to a 3.3 V-only input.</p>
+          </div>
+          <div class="field-ready">
+            <div class="field-ready-heading">
+              <span class="part-number">BEYOND THE TABLETOP</span>
+              <h3>Field equipment is chosen for the site.</h3>
+              <p>Only for a supervised, approved pilot—and with specifications selected by qualified professionals.</p>
+            </div>
+            <ul>
+              <li>Calibrated rain and soil-water instruments</li>
+              <li>Suitable tilt or displacement monitoring</li>
+              <li>Weatherproof enclosure and rated connections</li>
+              <li>Industrial logger, backup power, and telemetry</li>
+              <li>Dashboard with audit logs and fault alerts</li>
+            </ul>
+          </div>
+          <div class="research-note">
+            <span class="research-symbol" aria-hidden="true">↗</span>
+            <p><strong>A question to investigate—not a novelty claim.</strong> Existing rainfall-threshold methods, geotechnical instruments, remote monitoring, and public alert networks already exist. Fault-aware sensor fusion and resilient local alerting during network outages could be compared with published research and patent claims.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testing-section" id="testing">
+        <div class="section-wrap">
+          <div class="section-label"><span>05</span> TESTING &amp; VALIDATION</div>
+          <div class="testing-header">
+            <h2>Prove the prototype<br /><em>before field use.</em></h2>
+            <p>
+              Start with safe, controlled bench tests. Treat every threshold
+              and alert as a simulation until professionals validate the
+              system for a specific site.
+            </p>
+          </div>
+          <div class="test-grid">
+            <article class="test-card">
+              <span>01 / BASELINE</span>
+              <h3>Bench &amp; calibration</h3>
+              <p>Check sensor readings against known or reference conditions. Record timestamps, expected ranges, and calibration results.</p>
+            </article>
+            <article class="test-card">
+              <span>02 / SENSOR FAULT</span>
+              <h3>Disconnect a sensor</h3>
+              <p>Simulate missing or invalid readings. Confirm the dashboard identifies a sensor fault instead of showing a normal state.</p>
+            </article>
+            <article class="test-card">
+              <span>03 / NETWORK</span>
+              <h3>Interrupt connectivity</h3>
+              <p>Test Wi-Fi or telemetry loss. Check that the fault is visible and local demo logic behaves as designed during an outage.</p>
+            </article>
+            <article class="test-card">
+              <span>04 / POWER</span>
+              <h3>Check backup power</h3>
+              <p>Verify the power-failure indication and approved backup behavior without compromising electrical safety.</p>
+            </article>
+            <article class="test-card">
+              <span>05 / RELIABILITY</span>
+              <h3>Run longer trials</h3>
+              <p>Observe drift, missing records, communication interruptions, and maintenance needs over extended supervised operation.</p>
+            </article>
+          </div>
+          <div class="simulation" aria-labelledby="simulation-title">
+            <div class="simulation-topline">
+              <span class="simulation-kicker"><span class="simulation-live"></span> INTERACTIVE TEST DEMO</span>
+              <span class="simulation-badge">SYNTHETIC DATA · NOT AI ANALYSIS</span>
+            </div>
+            <div class="simulation-layout">
+              <div class="simulation-scene">
+                <div class="scene-overlay">
+                  <span class="scene-label">SLOPEGUARD / TEST ENVIRONMENT</span>
+                  <span class="scene-state" id="simulation-state">READY TO RUN</span>
+                </div>
+                <div class="scene-readout">
+                  <span id="simulation-phase">Waiting for demo</span>
+                  <span class="scene-readout-dot"></span>
+                </div>
+              </div>
+              <div class="simulation-console">
+                <p class="part-number">SAMPLE MONITORING CONSOLE</p>
+                <h3 id="simulation-title">See how a test sequence behaves.</h3>
+                <p class="simulation-description" id="simulation-description" aria-live="polite">
+                  Run a fictional scenario to see sample sensor states and fault handling. No real sensors or risk thresholds are used.
+                </p>
+                <div class="simulation-metrics" aria-label="Synthetic demo readings">
+                  <div class="simulation-metric">
+                    <span>RAIN INPUT</span>
+                    <strong id="metric-rain">—</strong>
+                    <i><b id="bar-rain"></b></i>
+                  </div>
+                  <div class="simulation-metric">
+                    <span>SOIL-WATER</span>
+                    <strong id="metric-soil">—</strong>
+                    <i><b id="bar-soil"></b></i>
+                  </div>
+                  <div class="simulation-metric">
+                    <span>MOVEMENT</span>
+                    <strong id="metric-movement">—</strong>
+                    <i><b id="bar-movement"></b></i>
+                  </div>
+                </div>
+                <div class="simulation-footer">
+                  <div class="simulation-progress" aria-label="Test sequence progress">
+                    <span id="simulation-progress"></span>
+                  </div>
+                  <div class="simulation-controls">
+                    <button class="simulation-button" id="simulation-play" type="button">▶ Run simulation</button>
+                    <button class="simulation-reset" id="simulation-reset" type="button">Reset</button>
+                  </div>
+                </div>
+                <p class="simulation-disclaimer">Illustrative interface only. Not connected to a sensor, AI model, alert service, or official warning system.</p>
+              </div>
+            </div>
+          </div>
+          <div class="validation-banner">
+            <span class="validation-label">REAL-WORLD VALIDATION</span>
+            <p>
+              Only in an authorised, expert-supervised pilot: collect data
+              across weather conditions, compare sensor records with field
+              observations, measure false alarms and missed events, and
+              document maintenance and communication failures. Thresholds
+              must be validated for that site—not copied from a demo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pathway-section" id="pathway">
+        <div class="section-wrap">
+          <div class="section-label section-label-light"><span>06</span> FROM CLASSROOM TO FIELD</div>
+          <div class="pathway-header">
+            <h2>Progress with<br /><em>permission &amp; proof.</em></h2>
+            <p>Any real-world application needs expert collaboration, measured validation, and formal approval.</p>
+          </div>
+          <div class="pathway-grid">
+            <article class="pathway-card">
+              <span>STAGE 01</span><h3>Student prototype</h3>
+              <p>Demonstrate the logic on a stable tabletop model. Mark every alert as a simulation.</p>
+            </article>
+            <article class="pathway-card">
+              <span>STAGE 02</span><h3>Supervised pilot</h3>
+              <p>Seek collaboration with qualified geologists, a university, and relevant authorities. Survey first; install only with permission.</p>
+            </article>
+            <article class="pathway-card">
+              <span>STAGE 03</span><h3>Validation</h3>
+              <p>Compare sensor data with expert observations across conditions; measure false alarms and missed events, then document failures.</p>
+            </article>
+            <article class="pathway-card">
+              <span>STAGE 04</span><h3>Operational proposal</h3>
+              <p>Require independent technical review, resilient communications, response procedures, and formal approval.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="safety-section section-wrap" id="safety">
+        <div class="safety-mark" aria-hidden="true">!</div>
+        <div class="safety-copy">
+          <div class="section-label"><span>07</span> LIMITATIONS &amp; SAFETY</div>
+          <h2>One sensor can’t<br /><em>promise safety.</em></h2>
+          <p>
+            A wetness sensor is not a calibrated rain gauge. Soil moisture is
+            not the same as pore-water pressure. Tilt alone cannot confirm
+            slope failure, and no single sensor guarantees prediction.
+          </p>
+          <p class="safety-strong">
+            Never destabilise a real slope or put people at risk during tests.
+            SLOPEGUARD must not trigger evacuations or replace official warnings.
+          </p>
+          <div class="safety-links">
+            <a href="https://training.gsiti.gsi.gov.in/" target="_blank" rel="noreferrer">
+              Geological Survey of India training material <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://sachet.ndma.gov.in/" target="_blank" rel="noreferrer">
+              NDMA SACHET portal <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <p class="source-note">These are real-world context and reference points—not evidence of SLOPEGUARD approval or connection.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand-footer" href="#home" aria-label="SLOPEGUARD home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" fill="none">
+            <path d="M4 27.5 14.8 9l5.1 8.3 3.2-5.1L32 27.5H4Z" />
+            <path d="m9.2 27.5 5.6-9.6 5.3 9.6m-2.1-3.8 5-7.7 6.7 11.5" />
+            <path d="M18 5.5v5m-2.5-2.5h5" />
+          </svg>
+        </span>
+        <span class="brand-name">SLOPE<span>GUARD</span></span>
+      </a>
+      <p>A student concept for learning, collaboration, and careful validation.</p>
+      <a class="back-top" href="#home">Back to top ↑</a>
+      <div class="footer-bottom">
+        <span>Concept only · Not an operational warning service</span>
+        <span>Video: <a href="https://www.pexels.com/video/moody-aerial-view-of-kerala-s-lush-forest-34698830/" target="_blank" rel="noreferrer">Kerala’s lush forest · Pexels</a></span>
+      </div>
+    </footer>
+  </body>
+</html>
